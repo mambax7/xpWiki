@@ -2,7 +2,7 @@
 // $Id: x20_keepblockoptions.inc.php,v 1.2 2008/03/17 07:08:22 nao-pon Exp $
 
 // Keep Block option values when update (by nobunobu) for XOOPS 2.0.x
-$db =& Database::getInstance() ;
+$db = Database::getInstance() ;
 $query = "SELECT mid FROM ".$db->prefix('modules')." WHERE dirname='".$modversion['dirname']."' ";
 $result = $db->query($query);
 $record= $db->fetcharray($result);

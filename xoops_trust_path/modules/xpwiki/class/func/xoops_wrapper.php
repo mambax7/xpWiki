@@ -586,7 +586,7 @@ class XpWikiXoopsWrapper extends XpWikiBackupFunc {
 			$criteria->add($user_criteria);
 		}
 		$notification_handler =& xoops_gethandler('notification') ;
-		$notifications =& $notification_handler->getObjects($criteria);
+		$notifications = $notification_handler->getObjects($criteria);
 		if (empty($notifications)) {
 			return;
 		}

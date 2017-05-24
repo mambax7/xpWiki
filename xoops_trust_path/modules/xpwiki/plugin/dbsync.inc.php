@@ -170,7 +170,7 @@ __EOD__;
 	function do_dbupdate() {
 
 		if (XC_CLASS_EXISTS('XoopsErrorHandler')) {
-			$xoopsErrorHandler =& XoopsErrorHandler::getInstance();
+			$xoopsErrorHandler = XoopsErrorHandler::getInstance();
 			$xoopsErrorHandler->activate(true);
 		}
 		error_reporting(E_ERROR);

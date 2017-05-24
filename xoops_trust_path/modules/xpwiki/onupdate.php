@@ -21,7 +21,7 @@ function xpwiki_onupdate_base( $module , $mydirname )
 		if( ! is_array( $msgs ) ) $msgs = array() ;
 	}
 
-	$db =& Database::getInstance() ;
+	$db = Database::getInstance() ;
 	$mid = $module->getVar('mid') ;
 
 	// DB Check for db non support version

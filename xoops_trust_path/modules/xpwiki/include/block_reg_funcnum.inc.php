@@ -4,7 +4,7 @@
  * $Id: block_reg_funcnum.inc.php,v 1.2 2008/02/08 03:12:06 nao-pon Exp $
  */
 
-$db =& Database::getInstance() ;
+$db = Database::getInstance() ;
 $query = "SELECT mid FROM ".$db->prefix('modules')." WHERE dirname='".$modversion['dirname']."' ";
 $result = $db->query($query);
 $record= $db->fetcharray($result);

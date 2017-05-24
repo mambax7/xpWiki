@@ -36,7 +36,7 @@ if( ! empty( $_GET['lib'] ) ) {
 } else {
 	// language files (admin.php)
 	require_once( $langmanpath ) ;
-	$langman =& D3LanguageManager::getInstance() ;
+	$langman = D3LanguageManager::getInstance() ;
 	$langman->read( 'admin.php' , $mydirname , $mytrustdirname , true ) ;
 
 	// fork each pages of this module
